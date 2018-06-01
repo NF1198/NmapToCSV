@@ -57,7 +57,9 @@ public class CmdPrintUsage implements SubCommand {
     }
 
     private static String getMessage() {
-        String usageMessage = "nmaptocsv -D <directory> -i <filename>";
+        
+        
+        String usageMessage = "nmaptocsv <sub-command> <sub-command arguments>";
 
         final String header = " arguments:\n";
         final String footer = "";
