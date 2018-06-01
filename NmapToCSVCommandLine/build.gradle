@@ -17,6 +17,9 @@ if (!hasProperty('mainClass')) {
 
 mainClassName = mainClass
 
+sourceSets {
+    libsDirName = 'lib'
+}
 
 jar {
     manifest {
@@ -27,7 +30,6 @@ jar {
 dependencies {
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'com.atlassian.commonmark', name: 'commonmark', version: '0.10.0'
-    implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.5'
     implementation project(':NmapXMLParser')
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     testImplementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
