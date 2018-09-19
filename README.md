@@ -7,6 +7,8 @@ Build with gradle.
 Inputs: Directory of NMAP output files, or individual files
 Outputs: CSV containing all hosts, ports, and services found
 
+[Distributions](https://github.com/NF1198/NmapToCSV/wiki)
+
 ## Example Usage
 
     nmaptocsv <sub-command> <sub-command arguments>
