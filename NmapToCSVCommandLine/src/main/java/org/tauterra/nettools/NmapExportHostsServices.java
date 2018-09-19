@@ -128,10 +128,12 @@ public class NmapExportHostsServices implements SubCommand {
 
         StringBuilder sb = new StringBuilder();
         printHostHeader(sb);
+        System.out.print(sb);
         hosts.entrySet().forEach((t) -> {
+            sb.setLength(0);
             printHostServices(sb, t.getKey(), t.getValue());
+            System.out.print(sb);
         });
-        System.out.println(sb.toString());
     }
 
     private static final String DELIM = ",";
