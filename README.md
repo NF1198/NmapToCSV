@@ -31,7 +31,7 @@ Please contact me if you have questions about how to use this project.
 
 # Example output
 
-    $> nmaptocsv exportHosts -D <path to NMAP XML> | column -s, -t
+    $> nmap2csv exportHosts -D <path to NMAP XML> | column -s, -t
     exportHosts
     IPv4           hostname  service           port   proto  state   product
     192.168.1.1              domain            53     tcp    open    dnsmasq
