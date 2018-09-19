@@ -27,6 +27,28 @@ jar {
     }
 }
 
+startShadowScripts {
+    applicationName = 'nmap2csv' 
+}
+
+shadowDistZip {
+    baseName = 'nmap2csv'
+    archiveName = "${baseName}-${version}-${classifier}.${extension}"
+}
+
+shadowDistTar {
+    baseName = 'nmap2csv'
+    archiveName = "${baseName}-${version}-${classifier}.${extension}"
+}
+
+startScripts {
+    applicationName = 'nmap2csv'
+}
+
+shadowJar{
+    archiveName = "nmap2csv.${extension}"
+}
+
 dependencies {
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     implementation group: 'com.atlassian.commonmark', name: 'commonmark', version: '0.10.0'
