@@ -11,7 +11,7 @@ Outputs: CSV containing all hosts, ports, and services found
 
 ## Example Usage
 
-    nmaptocsv <sub-command> <sub-command arguments>
+    nmap2csv <sub-command> <sub-command arguments>
 
     usage [-f <arg>]
     ======================================
@@ -25,7 +25,7 @@ Outputs: CSV containing all hosts, ports, and services found
     -i,--input <arg>
     -v,--verbose          verbose logging
 
-    $> nmaptocsv exportHosts -D . > hosts_summary.csv
+    $> nmap2csv exportHosts -D . > hosts_summary.csv
 
 Please contact me if you have questions about how to use this project.
 
