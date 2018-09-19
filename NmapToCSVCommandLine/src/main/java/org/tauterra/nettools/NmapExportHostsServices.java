@@ -83,6 +83,7 @@ public class NmapExportHostsServices implements SubCommand {
                     err.println("Specified file doesn't exist <" + fname + ">");
                     return;
                 }
+                inputFiles.add(file);
             }
         }
 
@@ -106,7 +107,7 @@ public class NmapExportHostsServices implements SubCommand {
         final Map<NmapAddressElement, NmapHostElement> hosts = new TreeMap<>();
         for (File f : inputFiles) {
             if (verbose) {
-                System.err.println("processing file: " + f.getPath().toString());
+                System.err.println("processing file: " + f.getPath());
             }
             try {
                 XMLInputFactory inputFactory = XMLInputFactory.newFactory();
